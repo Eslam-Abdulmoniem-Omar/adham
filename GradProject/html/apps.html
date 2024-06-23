@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============Title============= -->
+    <title>Scripta</title>
+    <!-- ============Icons============= -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- ============Css============= -->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <>
+    <div class="container" id="app">
+      <!-- Start Sidebar Section -->
+      <aside>
+        <a href="#" class="logo">
+          <img src="../images/Logo.png" alt="Not-Found" />
+          <h2>scripta</h2>
+        </a>
+
+        <div class="sidebar">
+          <a href="./scripta.html" class="sidebar__link">
+            <span class="material-icons-sharp"> dashboard </span>
+            <h3 class="sidebar__link-name">dashboard</h3>
+          </a>
+          <a href="./security.html" class="sidebar__link">
+            <span class="material-icons-sharp"> shield </span>
+            <h3 class="sidebar__link-name">security</h3>
+          </a>
+          <a href="./process.html" class="sidebar__link">
+            <span class="material-icons-sharp"> account_tree </span>
+            <h3 class="sidebar__link-name">process management</h3>
+          </a>
+
+          <a href="apps.html" class="sidebar__link active highlight">
+            <span class="material-icons-sharp"> apps </span>
+            <h3 class="sidebar__link-name">apps</h3>
+          </a>
+          <div class="toggle">
+            <a href="#app__installed" class="sidebar__link">
+              <h3 class="sidebar__link-name">app installed</h3>
+            </a>
+            <a href="#app__startup" class="sidebar__link">
+              <h3 class="sidebar__link-name">app startup</h3>
+            </a>
+            <a href="#users-info" class="sidebar__link">
+              <h3 class="sidebar__link-name">users info</h3>
+            </a>
+          
+          </div>
+        </div>
+      </aside>
+      <!-- End Sidebar Section -->
+      <!-- Start Main -->
+
+      <main class="apps-category">
+        <div class="main-top">
+          <h1 class="main__title">Apps Info</h1>
+          <div class="light-mode">
+            <span class="material-icons-sharp"> light_mode </span>
+            <span class="material-icons-sharp"> dark_mode </span>
+          </div>
+        </div>
+        <!-- Start app-installed section -->
+        <section class="app__installed" id="app__installed">
+          <h2 class="app__installed-title">intalled Apps</h2>
+          <div class="table-scroll">
+<table>
+              <thead>
+                <th>name</th>
+                <th>version</th>
+                <th>vendor</th>
+              </thead>
+           <tbody>
+            
+           </tbody>
+</table>
+
+       
+          </div>
+        </section>
+        <!-- Start app-startup section -->
+
+        <section class="app__startup" id="app__startup">
+          <h2 class="app__startup-title">startups Apps</h2>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <th colspan="1">name</th>
+                <th colspan="2">path</th>
+              </thead>
+              <tbody>
+              
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+  
+
+        <!-- Start local section -->
+        <section class="users-info" id="users-info">
+          <div class="local-users__container">
+            <h2>local users</h2>
+            <div class="local-users__content">
+            
+              
+        
+            </div>
+          </div>
+        
+        </section>
+      </main>
+      <!-- End Main -->
+    </div>
+    <!-- ======== JS file ========== -->
+    <script src="../app.js"></script>
+
+  </body>
+</html>
